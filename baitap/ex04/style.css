@@ -5,8 +5,10 @@ body{
 
 /* Header **/
 header{
-  
-
+  background: green;
+  color: white;
+  padding: 20px;
+  text-aligen: center
 }
 
 header a{
@@ -46,7 +48,10 @@ header a:hover{
 
 
 footer{
-  
+  background: green;
+  text-aligen: center
+  color: white;
+  padding:20px
 
 }
 
