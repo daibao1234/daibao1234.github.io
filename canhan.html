@@ -12,26 +12,44 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
+      height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       background-color: #f4f4f4;
       color: #333;
     }
 
-    header {
-      background: linear-gradient(to right, #00bcd4, #2196f3);
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
+    /* Hình nền toàn trang */
+    body {
+      background-image: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/beach-1990274_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
+    /* Tiêu đề trang */
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Thanh điều hướng */
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     nav ul li {
@@ -49,28 +67,16 @@
       color: #ffeb3b;
     }
 
-    .hero {
-      background-image: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/beach-1990274_1280.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .hero h2 {
-      font-size: 3em;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
+    /* Phần giới thiệu địa điểm */
     .destinations {
       max-width: 1200px;
-      margin: 40px auto;
+      margin: -100px auto 40px;
       padding: 0 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+      position: relative;
     }
 
     .destinations h2 {
@@ -117,6 +123,7 @@
       color: #666;
     }
 
+    /* Chân trang */
     footer {
       background-color: #2196f3;
       color: #fff;
@@ -125,8 +132,9 @@
       margin-top: 40px;
     }
 
+    /* Responsive */
     @media (max-width: 600px) {
-      .hero h2 {
+      header h1 {
         font-size: 2em;
       }
     }
@@ -145,10 +153,6 @@
       </ul>
     </nav>
   </header>
-
-  <section class="hero">
-    <h2>Trải Nghiệm Vẻ Đẹp Biển Nha Trang</h2>
-  </section>
 
   <section class="destinations">
     <h2>Địa Điểm Nổi Bật</h2>
