@@ -74,7 +74,7 @@ header::after,
 
 #showcase {
     min-height: 400px;
-    background: url('img/anh-nha-trang.jpg') no-repeat center center/cover;
+    background: url('anh-nha-trang.jpg') no-repeat center center/cover;
     text-align: center;
     color: white;
     display: flex;
