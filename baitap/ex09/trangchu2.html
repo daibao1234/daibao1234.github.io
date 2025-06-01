@@ -8,6 +8,7 @@
     <meta name="author" content="Cửa hàng Bữa Sáng Ngon">
     <title>Bữa Sáng Ngon | Trang chủ</title>
     <link rel="stylesheet" href="ex09.css">
+    <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
     <header>
@@ -35,55 +36,65 @@
     <section id="newsletter">
       <div class="container">
         <h1>Đăng ký để nhận thực đơn mới và khuyến mãi</h1>
-        <form>
-          <input type="email" placeholder="Nhập Email...">
+        <form action="#" method="post">
+          <label for="email" style="display: none;">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Nhập Email..." required>
           <button type="submit" class="button_1">Đăng ký</button>
         </form>
       </div>
     </section>
 
     <section id="boxes">
-  <div class="container">
+      <div class="container">
 
-    <div class="box">
-      <img src="banhmi.jpg" alt="Bánh mì">
-      <h3>Bánh Mì Truyền Thống</h3>
-      <p>Bánh mì giòn rụm kèm thịt nguội, pate, rau sống và nước sốt đặc trưng.</p>
-      <p><strong>Giá:</strong> 20.000₫</p>
-      <button class="button_1">Đặt món</button>
-    </div>
+        <div class="box">
+          <img src="banhmi.jpg" alt="Bánh mì truyền thống">
+          <h3>Bánh Mì Truyền Thống</h3>
+          <p>Bánh mì giòn rụm kèm thịt nguội, pate, rau sống và nước sốt đặc trưng.</p>
+          <p><strong>Giá:</strong> 20.000₫</p>
+          <button class="button_1">Đặt món</button>
+        </div>
 
-    <div class="box">
-      <img src="phobo.jpg" alt="Phở bò">
-      <h3>Phở Bò</h3>
-      <p>Phở bò thơm ngon với nước dùng đậm đà và thịt bò tươi cắt lát mỏng.</p>
-      <p><strong>Giá:</strong> 40.000₫</p>
-      <button class="button_1">Đặt món</button>
-    </div>
+        <div class="box">
+          <img src="phobo.jpg" alt="Phở bò">
+          <h3>Phở Bò</h3>
+          <p>Phở bò thơm ngon với nước dùng đậm đà và thịt bò tươi cắt lát mỏng.</p>
+          <p><strong>Giá:</strong> 40.000₫</p>
+          <button class="button_1">Đặt món</button>
+        </div>
 
-    <div class="box">
-      <img src="xoi.jpg" alt="Xôi gà">
-      <h3>Xôi Gà</h3>
-      <p>Xôi nếp dẻo thơm ăn kèm thịt gà xé, hành phi và nước mắm đặc chế.</p>
-      <p><strong>Giá:</strong> 25.000₫</p>
-      <button class="button_1">Đặt món</button>
-    </div>
+        <div class="box">
+          <img src="xoi.jpg" alt="Xôi gà">
+          <h3>Xôi Gà</h3>
+          <p>Xôi nếp dẻo thơm ăn kèm thịt gà xé, hành phi và nước mắm đặc chế.</p>
+          <p><strong>Giá:</strong> 25.000₫</p>
+          <button class="button_1">Đặt món</button>
+        </div>
 
-    <div class="box">
-      <img src="bunbo.jpg" alt="Bún bò Nha Trang">
-      <h3>Bún Bò Nha Trang</h3>
-      <p>Bún bò cay nhẹ, nước lèo đậm đà từ sả, mắm ruốc, ăn kèm giò heo và rau sống.</p>
-      <p><strong>Giá:</strong> 45.000₫</p>
-      <button class="button_1">Đặt món</button>
-    </div>
+        <div class="box">
+          <img src="bunbo.jpg" alt="Bún bò Nha Trang">
+          <h3>Bún Bò Nha Trang</h3>
+          <p>Bún bò cay nhẹ, nước lèo đậm đà từ sả, mắm ruốc, ăn kèm giò heo và rau sống.</p>
+          <p><strong>Giá:</strong> 45.000₫</p>
+          <button class="button_1">Đặt món</button>
+        </div>
 
-    <div class="box">
-      <img src="chaolong.jpg" alt="Cháo lòng">
-      <h3>Cháo Lòng</h3>
-      <p>Cháo gạo rang nấu cùng nước xương, kèm lòng heo và rau thơm.</p>
-      <p><strong>Giá:</strong> 30.000₫</p>
-      <button class="button_1">Đặt món</button>
-    </div>
+        <div class="box">
+          <img src="chaolong.jpg" alt="Cháo lòng">
+          <h3>Cháo Lòng</h3>
+          <p>Cháo gạo rang nấu cùng nước xương, kèm lòng heo và rau thơm.</p>
+          <p><strong>Giá:</strong> 30.000₫</p>
+          <button class="button_1">Đặt món</button>
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Bữa Sáng Ngon. Mọi quyền được bảo lưu.</p>
+        <p>Liên hệ: <a href="mailto:info@buasangngon.vn" style="color: #f39c12;">info@buasangngon.vn</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
