@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: #e67e22;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --accent-color: #f39c12;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+header {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 5px solid var(--primary-color);
+}
+
+#branding h1 {
+  font-size: 32px;
+}
+
+#branding .highlight {
+  color: var(--primary-color);
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav .current a {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+#showcase {
+  background: url("https://quanghuyplaza.com/wp-content/uploads/2025/02/anh-sang-trong-quan-an.jpg") no-repeat center center/cover;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#newsletter {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#newsletter input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.button_1 {
+  padding: 10px 20px;
+  background: #fff;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button_1:hover {
+  background: #fdf2e9;
+}
+
+#main {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+#main-col {
+  flex: 3;
+}
+
+#main-col ul {
+  padding-left: 20px;
+}
+
+#main-col li {
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  flex: 1;
+}
+
+.dark {
+  background: #444;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 4px solid var(--primary-color);
+  margin-top: 40px;
+}
